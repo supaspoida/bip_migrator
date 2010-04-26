@@ -1,15 +1,13 @@
 require 'spec_helper'
 
 describe Show do
-  before(:each) do
-    @valid_attributes = {
-      :venue_id => 1,
-      :date => Time.now,
-      :notes => "value for notes"
-    }
+  subject do
+    Factory.build(:show)
   end
 
-  it "should create a new instance given valid attributes" do
-    Show.create!(@valid_attributes)
+
+  it "should create a valid instance from factory" do
+    subject.should be_valid
   end
+
 end
