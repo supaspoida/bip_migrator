@@ -6,6 +6,7 @@ gem "bson_ext", "0.20.1" # C extensions for mongo
 
 group :development, :test do
   gem "factory_girl", "1.2.4"
+  gem "ruby-debug"
 end
 
 group :test do
