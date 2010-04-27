@@ -1,5 +1,6 @@
 class Setlist
   include Mongoid::Document
+  include Mongoid::Timestamps
 
   field :show_id, :type => Integer
 
